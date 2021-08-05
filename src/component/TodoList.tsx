@@ -64,7 +64,6 @@ const TodoList = () => {
                 <input className='border border-gray-400 w-full text-2xl'
                     onKeyDown={onKeyDownCallback} onChange={txtInputCallback}></input>
                 <button className='border border-gray-400 w-8 font-bold' onClick={() => addTask(tempStr)}>+</button>
-                {/* <p>Todo list from another component</p> */}
             </div>
 
             {/*incompleted-Task box */}
