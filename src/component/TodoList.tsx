@@ -28,7 +28,7 @@ const TodoList = () => {
 
     const addTask = (inStr: string) => {
         if (inStr.length == 0) {
-            alert("Can't add empty tasks")
+            alert("Task cannot be empty")
         } else {
             console.log("Task added: " + inStr);
             const newId = (new Date()).getTime();
@@ -62,7 +62,7 @@ const TodoList = () => {
             {/* Input sec */}
             <div className='flex space-x-1'>
                 <input className='border border-gray-400 w-full text-2xl'
-                    onKeyDown={onKeyDownCallback} onChange={txtInputCallback}></input>
+                    onKeyDown={onKeyDownCallback} onChange={txtInputCallback} placeholder={"Your task here..."} ></input>
                 <button className='border border-gray-400 w-8 font-bold' onClick={() => addTask(tempStr)}>+</button>
             </div>
 
